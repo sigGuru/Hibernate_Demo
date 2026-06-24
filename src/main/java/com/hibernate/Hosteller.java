@@ -2,8 +2,10 @@ package com.hibernate;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
-@Entity
+@Entity(name = "Hostel_db")
+
 public class Hosteller {
 
     @Id

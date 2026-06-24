@@ -30,7 +30,7 @@ public class Main {
         //Storing in Db
 
         Transaction transaction = session.beginTransaction();
-//
+
 //        session.persist(hosteller);
 //        transaction.commit();
 
@@ -55,7 +55,7 @@ public class Main {
 
         // Delete in Db
 
-        Hosteller del = session.find(Hosteller.class, 25);
+        Hosteller del = session.find(Hosteller.class, null);
         session.remove(del);
         transaction.commit();
 
