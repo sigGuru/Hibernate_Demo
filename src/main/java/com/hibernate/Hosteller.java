@@ -4,8 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@Entity(name = "Hostel_db")
-//@Table(name = "Hostel_db")
+@Entity
+@Table(name = "Hostel_db")
 public class Hosteller {
 
     @Id
