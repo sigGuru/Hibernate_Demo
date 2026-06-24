@@ -6,6 +6,8 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "Hostel_db")
+
+// Hostel Class For Management
 public class Hosteller {
 
     @Id
