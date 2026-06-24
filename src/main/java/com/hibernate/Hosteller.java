@@ -1,8 +1,13 @@
 package com.hibernate;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Hosteller {
 
-    int id;
+    @Id
+    int hid;
     String name;
     int age;
 
@@ -22,18 +27,18 @@ public class Hosteller {
         this.name = name;
     }
 
-    public int getId() {
-        return id;
+    public int getHid() {
+        return hid;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setHid(int hid) {
+        this.hid = hid;
     }
 
     @Override
     public String toString() {
         return "Hosteller{" +
-                "id=" + id +
+                "id=" + hid +
                 ", name='" + name + '\'' +
                 ", age='" + age + '\'' +
                 '}';
